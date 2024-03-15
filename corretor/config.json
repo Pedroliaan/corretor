@@ -1,0 +1,242 @@
+{
+    "titulo" : "Atividade 1",
+    "questoes" : [
+        {
+            "descricao" : "Questao 1",
+            "comando" : "php",
+            "script" : "q1.php",
+            "correcoes" : [
+                {
+                    "teste" : {
+                        "func_expect" : "testar_igual",
+                        "args_expect" : "Ola, Mundo!"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 2",
+            "comando" : "php",
+            "script" : "q2.php",
+            "correcoes" : [
+                {
+                    "input" : "Alice\n10",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : "Alice.*10"
+                    }
+                },
+                {
+                    "input" : "Bruno\n30",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : "Bruno.*30"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 3",
+            "comando" : "php",
+            "script" : "q3.php",
+            "correcoes" : [
+                {
+                    "input" : "1\n1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*2.*"
+                    }
+                },
+                {
+                    "input" : "2\n30",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*32.*"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 4",
+            "comando" : "php",
+            "script" : "q4.php",
+            "correcoes" : [
+                {
+                    "input" : "1\n1\n1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*1"
+                    }
+                },
+                {
+                    "input" : "2\n10\n3",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*5"
+                    }
+                },
+                {
+                    "input" : "2\n3\n5",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*3\\.333.*"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 5",
+            "comando" : "php",
+            "script" : "q5.php",
+            "correcoes" : [
+                {
+                    "input" : "cama\nleao",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*camaleao.*"
+                    }
+                },
+                {
+                    "input" : "casa\nnova",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*casanova.*"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 13",
+            "comando" : "php",
+            "script" : "q13.php",
+            "correcoes" : [
+                {
+                    "input" : "0",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*[^mM](?i:par)"
+                    }
+                },
+                {
+                    "input" : "2",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*[^mM](?i:par)"
+                    }
+                },
+                {
+                    "input" : "1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:ímpar)"
+                    }
+                },
+                {
+                    "input" : "3",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:ímpar)"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 14",
+            "comando" : "php",
+            "script" : "q14.php",
+            "correcoes" : [
+                {
+                    "input" : "0",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:zero)"
+                    }
+                },
+                {
+                    "input" : "1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:positivo)"
+                    }
+                },
+                {
+                    "input" : "-1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:negativo)"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 15",
+            "comando" : "php",
+            "script" : "q15.php",
+            "correcoes" : [
+                {
+                    "input" : "5\n4",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(5|(?i:primeiro)).*"
+                    }
+                },
+                {
+                    "input" : "4\n5",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(5|(?i:segundo)).*"
+                    }
+                },
+                {
+                    "input" : "4\n4",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:iguais).*"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 16",
+            "comando" : "php",
+            "script" : "q16.php",
+            "correcoes" : [
+                {
+                    "input" : "45",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:maior).*"
+                    }
+                },
+                {
+                    "input" : "5",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:menor).*"
+                    }
+                },
+                {
+                    "input" : "18",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : ".*(?i:maior).*"
+                    }
+                }
+            ]
+        },
+        {
+            "descricao" : "Questao 26",
+            "comando" : "php",
+            "script" : "q26.php",
+            "correcoes" : [
+                {
+                    "input" : "1",
+                    "teste" : {
+                        "func_expect" : "testar_regex",
+                        "args_expect" : "(1 \\+ \\d\\d? = \\d\\d?\\n?){11}"
+                    }
+                }
+            ]
+        }
+   ]
+}
